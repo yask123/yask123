@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Yask's Blog]]></title>
+  <link href="http://yask123.github.io//github/atom.xml" rel="self"/>
+  <link href="http://yask123.github.io//github/"/>
+  <updated>2014-08-31T00:59:58+05:30</updated>
+  <id>http://yask123.github.io//github/</id>
+  <author>
+    <name><![CDATA[Yask Srivastava]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Another Migration]]></title>
+    <link href="http://yask123.github.io//github/blog/2014/08/31/another-migration/"/>
+    <updated>2014-08-31T00:34:57+05:30</updated>
+    <id>http://yask123.github.io//github/blog/2014/08/31/another-migration</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s been a while since I posted anything on my blog. I have been using Wordpress for quite some time , Now I have decided to host my blog on Github via Octopress which works on Jekyll.</p>
+
+<p>Some of the blogs I follow are hosted on Jekyll and I wanted to try it out. I struggled a bit with setting up the environment , but once it is set up , it works really well. One instant thing to notice is that it is faster as it doesn&rsquo;t uses any kind of database. This is purely rendered through static pages.</p>
+
+<p>Well , the set up isn&rsquo;t difficult at all. If only I had run <code>$ sudo apt-get install build-essential</code> before.
+My installation was failing at <code>$ gem install bundle</code>.</p>
+
+<p>This was the error I recieced:
+<img src="http://yask123.github.io//github/images/first.png"></p>
+
+<p>This was fixed by <code>$ sudo apt-get install build-essential</code>
+<img src="http://yask123.github.io//github/images/second.png"></p>
+
+<p>I had earlier set up my blog in Jekyll. But Octopress makes it easier managing Jekyll. For example running <code>$ rake new_post['title']</code> auto generates the markdown file with appropriate names . Octopress has awesome plugins , for more features visit <a href="http://www.octopress.org">Octopress</a> .</p>
+
+<p>That&rsquo;s it for now , I&rsquo;ll probably transfer my Wordpress posts here if I get time!</p>
+]]></content>
+  </entry>
+  
+</feed>
