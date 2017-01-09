@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://iyask.me/sitemap.xml
+Disallow: /ghost/

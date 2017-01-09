@@ -1,0 +1,330 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>GSoC update - #3</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=5d0a2a6e3f">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://iyask.me/gsoc-update-3/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="http://iyask.me/gsoc-update-3/amp/">
+    
+    <meta property="og:site_name" content="Yask's Blog">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="GSoC update - #3">
+    <meta property="og:description" content="Ah! This week was a bit hectic. But I was able to do considerable amount of work. I got all my pending code reviewed and commited the changes to my repo after resolving issues. The patch had to go through a number of interations to resolve the issues in prior">
+    <meta property="og:url" content="http://iyask.me/gsoc-update-3/">
+    <meta property="article:published_time" content="2015-06-03T16:56:00.000Z">
+    <meta property="article:modified_time" content="2016-09-03T19:54:51.000Z">
+    <meta property="article:tag" content="google summer of code">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/yask123">
+    <meta property="article:author" content="https://www.facebook.com/yask123">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="GSoC update - #3">
+    <meta name="twitter:description" content="Ah! This week was a bit hectic. But I was able to do considerable amount of work. I got all my pending code reviewed and commited the changes to my repo after resolving issues. The patch had to go through a number of interations to resolve the issues in prior">
+    <meta name="twitter:url" content="http://iyask.me/gsoc-update-3/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Yask Srivastava">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="google summer of code">
+    <meta name="twitter:site" content="@yask123">
+    <meta name="twitter:creator" content="@yask123">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Yask&#x27;s Blog",
+        "logo": "http://iyask.me/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Yask Srivastava",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/29f5233f9ecf01cd87896df3fa74284e?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "http://iyask.me/author/yask/",
+        "sameAs": [
+            "http://iyask.me",
+            "https://www.facebook.com/yask123",
+            "https://twitter.com/yask123"
+        ],
+        "description": "@Flipkart(S16) - @Zomato (W15) - @GSoC(S15) -Creator of InstantMusic"
+    },
+    "headline": "GSoC update - #3",
+    "url": "http://iyask.me/gsoc-update-3/",
+    "datePublished": "2015-06-03T16:56:00.000Z",
+    "dateModified": "2016-09-03T19:54:51.000Z",
+    "keywords": "google summer of code",
+    "description": "Ah! This week was a bit hectic. But I was able to do considerable amount of work. I got all my pending code reviewed and commited the changes to my repo after resolving issues. The patch had to go through a number of interations to resolve the issues in prior",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://iyask.me"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.10">
+    <link rel="alternate" type="application/rss+xml" title="Yask's Blog" href="http://iyask.me/rss/">
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:280318,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body class="post-template tag-google-summer-of-code nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://iyask.me/">Home</a></li>
+            <li class="nav-resume" role="presentation"><a href="http://iyask.me/resume.pdf">Resume</a></li>
+            <li class="nav-projects" role="presentation"><a href="http://iyask.me/projects/">Projects</a></li>
+            <li class="nav-about" role="presentation"><a href="http://iyask.me/about/">About</a></li>
+            <li class="nav-algorithms" role="presentation"><a href="http://iyask.me/tag/algorithms/">Algorithms</a></li>
+    </ul>
+        <a class="subscribe-button icon-feed" href="http://iyask.me/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-google-summer-of-code">
+
+        <header class="post-header">
+            <h1 class="post-title">GSoC update - #3</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-06-03">03 June 2015</time>  on <a href="../tag/google-summer-of-code/">google summer of code</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <blockquote>
+  <p>Ah! This week was a bit hectic. But I was able to do considerable amount of work.</p>
+</blockquote>
+
+I got all my pending code reviewed and commited the changes to my repo after resolving issues. The patch had to go through a number of interations to resolve the issues in prior patches. The last patch fixed all the major bugs.  
+<!--more-->  
+
+<p>As I mentioned in my previous post I ported modernized <code>stylus</code> theme to <code>bootstrap</code> by making changes in <code>Global Tempates</code>. But Roger Haase suggested to make exlusive templates for Bootstrap themes as making changes to <code>Global templates</code> would restrict all the other theme developers to use Bootstrap's components such as <code>row</code> , <code>col-md-x</code> , <code>nav</code> , <code>panel</code>.. etc. I also made changes in Global Templates to make sure that it doesn't conflict with any bootstrap theme that work on top of it.</p>
+
+<h2 id="showmethecode">Show me the code!</h2>
+
+<p><a href="https://codereview.appspot.com/242460043/">ChangeLogs from CR #2</a>:</p>
+
+<h6 id="changelogfrompatch2"># ChangeLog from patch #2</h6>
+
+<p>Fixed the alignment of sub menu tabs and item views tabs <br>
+Added active visual effect to the current tab view <br>
+Fixed horizontal scroll bug <br>
+Fixed padding inside sub menu <br>
+Increased font size for wiki contents</p>
+
+<p>Automation + Global History  </p>
+
+<h6 id="changelog3newcrpatch1"># Changelog 3 , new cr patch 1</h6>
+
+<p>Added automation. run <code>$ ./m css</code> to automatically compile all the less files. <br>
+Modernized theme now runs with the current version of xstatic bootstrap. <br>
+Rewrote <code>global history</code> template <br>
+Changed font sizes at various places</p>
+
+<p>Changelog #4 <br>
+Made changes as suggested in last CR</p>
+
+<p>ChangeLog #5 <br>
+Created a special directory exclusively for modernized theme's template. <br>
+Added footer and breadcrumb. <br>
+Made changes as suggested by mentors in previous patch</p>
+
+<p>Some of the bugs in previous CRs were:</p>
+
+<ul>
+<li><p>HTML validation error due to use of  form  inside ul and unclosed div tags.This is fixed in my last commit.</p></li>
+<li><p>Design break issues in mobile views. Fixed in commit:</p></li>
+<li><p>Design break issue when breadcrumb's patch is too large. Fixed in this commit.</p></li>
+</ul>
+
+<p><a href="https://codereview.appspot.com/245560043/">ChangeLogs from CR #3:</a></p>
+
+<pre><code>Changes in User Setting and common.js to support highlighting of current links in menu  
+# Added common.css
+# Current opened tab now highlights in menu
+# Various css rules written to work on top/with common.css
+# Fixed the issue 'jumping of footer while changing tabs in user setting'
+# Fixed issue with breadcrumbs when the location address gets too long.
+# Fixed all the HTML error validation errors
+</code></pre>
+
+<p>The issues with last CR's were discussed with mentors and fixed. <br>
+Quick summary of my commits:</p>
+
+<p>I actually made a new branch in my fork of repo called <code>improvethemes</code>. Since I am doing things step by step and some things get broken in intermediatlry stages, It wouldn't have been right to commit changes in main branch. This can be easily merged when this feature is working 100% without any bugs.</p>
+
+<p>Now back to summary: <br>
+I have made 3 commits as yet , 4th one with improvements in usersetting page is exptected soon :). <br>
+Anyway:</p>
+
+<ol>
+<li><p><a href="https://bitbucket.org/yask123/moin-2.0/commits/1aefd749090633d9e8f456ee0bbe8ae64f99cd0c">Commit #1</a> : Created a new branch <code>improvethemes</code></p></li>
+<li><p><a href="https://bitbucket.org/yask123/moin-2.0/commits/90961106254ee93a02f7d9ec1cc1b94a85457f7a">Commit #2</a> : Wrote a new modernized theme based on bootstrap and also made it's template files (layout.html, global_history.html) <br>
+The template contains all the basic components such as navbar,sub menu, item menu, breadcrumb, footer.. etc.</p></li>
+<li><p><a href="https://bitbucket.org/yask123/moin-2.0/commits/2739ae9d435146871c6aec152ae809e065df6637">Commit #3</a> : <br>
+Further improvements in modernized theme and few style fixes in basic theme <br>
+Improvements in modernized theme:# Added common.css <br>
+Current opened tab now highlights in menu <br>
+Various css rules written to work on top/with common.css <br>
+Fixed the issue 'jumping of footer while changing tabs in user setting' <br>
+Fixed issue with breadcrumbs when the location address gets too long. <br>
+Fixed footer jump while changing tabs in user setting in basic theme <br>
+Fixed design break issue in Basic theme's subscription box: <a href="http://i.imgur.com/4s1CIb3.png">http://i.imgur.com/4s1CIb3.png</a> <br>
+Fixed design break in small resolution and removed form from under 'ul'</p></li>
+<li><p><a href="https://bitbucket.org/yask123/moin-2.0/commits/473b16c00b1597c2a9b8464d8dc852959d0f537b">Commit #4</a>: Fixed HTML validation error due to unclosed div tag</p></li>
+</ol>
+
+<p>I also updated xstatic bootstrap here is the <a href="https://bitbucket.org/yask123/xstatic-bootstrap/commits/942330589c64df20f73f2c6b77ca4afee8a09f73">commmit</a>. <br>
+This updates Bootstrap to version : 3.3.5</p>
+
+<h2 id="showmethescreenshots">Show me the screenshots!!</h2>
+
+<p><img src="http://i.imgur.com/mVXNklu.png"></p>
+
+<p><img src="http://i.imgur.com/cxHhrfB.png"></p>
+
+<p><img src="http://i.imgur.com/sd9HPD8.png"></p>
+
+<p><img src="http://i.imgur.com/2Wg10ej.png"></p>
+
+<p><img src="http://i.imgur.com/ssN3WCy.png"></p>
+
+<p><img src="http://i.imgur.com/AzuSJSv.png"></p>
+
+<h2 id="otherupdates">Other Updates ?</h2>
+
+<h4 id="hackathon">Hackathon</h4>
+
+<p>Yea! I participated in  continuous 34 hours AngelHack Hackathon this week. It was a greeat experience and we made an opensource chat summarizer tool. I am really proud of this app. We worked together all night all day! It was a great experience. Well done Vinayak Mehta, Ketan bhutt , Pranu!.</p>
+
+<p>About this app: <br>
+Summarize it is a chat summarizer plugin for instant messaging applications. It summarizes the large content of chat logs which enables users to quickly understand the current context of the conversation. Currently Summarize it works on top of Slack as its plugin.</p>
+
+<p><a href="http://iyask.me/SummarizeIt/">App Link</a></p>
+
+<h2 id="onelastthing">One last thing...!</h2>
+
+<h4 id="teachingdjango">Teaching Django</h4>
+
+<p>I have started teaching Django web developement to college students as a part of their summer training. First class was on tuesday which was an introductory class. All of the students are enthusiastic! I really like Django and this is going to be a great experiance.</p>
+        </section> 
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=753200618129775";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-href="http://iyask.me" data-width="700" data-numposts="5"></div>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/yask/" style="background-image: url(http://www.gravatar.com/avatar/29f5233f9ecf01cd87896df3fa74284e?s&amp;)"><span class="hidden">Yask Srivastava's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/yask/">Yask Srivastava</a></h4>
+
+                    <p>@Flipkart(S16) - @Zomato (W15) - @GSoC(S15) -Creator of InstantMusic</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">New Delhi, India</span>
+                    <span class="author-link icon-link"><a href="http://iyask.me">http://iyask.me</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=GSoC%20update%20-%20%233&amp;url=http://iyask.me/gsoc-update-3/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://iyask.me/gsoc-update-3/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://iyask.me/gsoc-update-3/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../cpu-scheduling-algos/">
+        <section class="post">
+            <h2>CPU scheduling Algos</h2>
+            <p>Posting a few basic c++ programs I wrote to simulate CPU scheduling algorithms. First Come First Serve As the…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../untitled-2/">
+        <section class="post">
+            <h2>GSoC Update - #2</h2>
+            <p>Phew! So my end-terms exams just ended on 15th June. But I had long gaps in between my exams…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://iyask.me">Yask's Blog</a> © 2017</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=5d0a2a6e3f"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=5d0a2a6e3f"></script>
+
+</body>
